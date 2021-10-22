@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- TIMBERT Adrien March 2021 -->
+<!-- https://github.com/aleolux -->
+<html>
+        <header> 
+			<script src="js/script.js" type="text/javascript"></script>
+			<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+			<link href="css/styles.css" rel="stylesheet">
+            <h1 id="title">Thank you for visiting us!</h1>
+            <p id="description">We appreciate if you could spend just a little moment with us to share your feedback.</p>
+        </header>
+
+    <div class="container" id="container">
+    
+        <form id="survey-form">
+
+            <h2>Survey Form</h2>
+
+            <label for="name" id="name-label">First name:</label><br>
+            <input id="name" type="text" name="name" placeholder="Input your first name" required><br>
+    
+            <label for="email" id="email-label">Email:</label><br>
+            <input id="email" name="email" type="email" placeholder="Input your email address" required><br>
+    
+            <label for="number" id="number-label">Phone:</label><br>
+            <input id="number" name="number" type="tel" pattern="[0-9]{10}" placeholder="Input your phone number" min="1" max="999999999"><br>
+    
+            <label for="dropdown" id="dropdown-label">Site where you stayed at:</label><br>
+            <select id="dropdown" name="dropdown" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="sunny">Sunny Valley Campsite</option>
+                <option value="sea">Sea Side Otter Campsite</option>
+                <option value="wild">Wildlife Protection Campsite (East)</option>
+                <option value="mountain">Mountain Lover Northpoint Campsite</option>
+            </select><br>
+
+            <label id="radio-label">How did you hear about us?</label><br>
+            <input type="radio" id="Tripadvisor" name="heard" value="Tripadvisor" onclick="EnableDisableTextBox()" required >
+            <label for="Tripadvisor">Tripadvisor</label><br>
+            <input type="radio" id="Airbnb" name="heard" value="Airbnb" onclick="EnableDisableTextBox()">
+            <label for="Airbnb">Airbnb</label><br>
+            <input type="radio" id="Hipcamp" name="heard" value="Hipcamp" onclick="EnableDisableTextBox()">
+            <label for="Hipcamp">Hipcamp</label><br>
+            <input type="radio" id="social" name="heard" value="social" onclick="EnableDisableTextBox()">
+            <label for="social">Social media page</label><br>
+            <input type="radio" id="web" name="heard" value="web" onclick="EnableDisableTextBox()">
+            <label for="web">Web search engines</label><br>
+            <input type="radio" id="friends" name="heard" value="friends" onclick="EnableDisableTextBox()">
+            <label for="friends">From friends/family</label><br>
+            <input type="radio" id="book" name="heard" value="book" onclick="EnableDisableTextBox()">
+            <label for="book">Travel books or local guides</label><br>
+            <input type="radio" id="other" name="heard" value="other" onclick="EnableDisableTextBox()">
+            <label for="other">Other</label><br>
+            <input type="text" id="other-text" placeholder="Enter your comments here..." disabled="disabled"><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male" id="label-male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" id="label-female">Female</label>    
+            <input type="radio" id="gender-other" name="gender" value="other">
+            <label for="gender-other" id="label-gender-other">Other</label><br>
+
+            <label>Age category:<label><br>
+            <input type="radio" id="1225" name="age" value="1225" required>
+            <label for="1225" id="label-1225">12 - 25</label>
+            <input type="radio" id="2650" name="age" value="2650">
+            <label for="2650" id="label-2650">26 - 50</label>
+            <input type="radio" id="5070" name="age" value="5070">
+            <label for="5070" id="label-5070">50 - 70</label>
+            <input type="radio" id="70" name="age" value="70">
+            <label for="70" id="label-70">70+</label><br>
+
+            <label for="comments" id="label-comments">Lets us know what you think!</label><br>
+            <textarea d="comments" name="comments" placeholder="Enter your comments here..." maxlength=250 wrap="soft" required></textarea><br>
+
+            <label>Do you think we should improve...</label><br>
+            <input type="checkbox" name="xp" id="prices" value="prices">
+            <label for="prices" id=label-prices>Prices</label>
+            <input type="checkbox" name="xp" id="online" value="online">
+            <label for="online" id=label-online>Online presence</label>
+            <input type="checkbox" name="xp" id="staff" value="staff">
+            <label for="xp-staff" id=label-staff>Staff training</label>
+            <input type="checkbox" name="xp" id="site" value="site">
+            <label for="xp-site" id=label-site>Facilities on site</label>
+            <br>
+            
+            <div id="button-container"><input id="submit" type="submit"></div>
+            
+
+        </form>
+
+    </div>
+
+    <div id="signature">
+        <p>Design by Adrien Timbert</p>
+        <a id="mygit" href="https://github.com/aleolux" target=_blank>github</a>
+    </div>
+
+</html>

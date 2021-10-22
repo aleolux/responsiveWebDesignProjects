@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* color set */
+:root{
+  --color-ivory:#9c978c;
+  --color-black:#202020;
+  --color-lint:#BDB2A0;
+  --color-charcoal:#545D60;
+}
+
+html, body{
+  margin:0;
+  width:100%;
+  height:100%;
+  font-family: "Poppins", sans-serif, monospace;
+  color:#202020;
+}
+
+#logo{
+  width:3rem;
+  margin:0;
+  padding: 0;
+}
+
+#logo2{
+  width: 5em;
+  margin:0;
+  padding: 0;
+}
+
+/* padding */
+.padding {
+  padding-bottom: 2rem;
+}
+
+/* Navbar styling */
+.navbar{
+  padding:0.4rem; /* 1rem=1em=16px root */
+  background: var(--color-black);
+}
+
+.navbar li{
+  padding-right: 20px;
+}
+
+.nav-link{
+  font-size:1.1em !important;
+  color:whitesmoke
+}
+
+.nav-link:hover{
+  color:var(--color-lint);
+}
+
+.navbar-toggler-icon{
+  background-color:none;
+  color:whitesmoke;
+}
+
+/* Carousel styling */
+.carousel-inner img{
+  width: 100%;
+  height:100%;
+}
+
+.carousel-caption{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size:500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.carousel-caption h3 {
+  font-size:200%;
+  text-shadow: 1px 1px 1px #000;
+  padding-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  width: 15%;
+  min-width: 8em;
+  max-width: 10em;
+  margin:0.5em;
+}
+
+.btn-primary {
+  background-color: var(--color-charcoal);
+  border: 1px solid var(--color-charcoal);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+
+/* Junbotron styling */
+.jumbotron {
+  padding: 1rem; 
+  border-radius: 0;
+}
+
+/* welcome class styling */
+.welcome {
+  width:75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  width: 75%;
+  border-top: 2px solid var(--color-lint);
+  margin: .3rem auto 1ren auto;
+
+}
+
+.fa-tree, .fa-recycle, .fa-home {
+  font-size: 4em;
+  color: var(--color-ivory);
+  margin:1rem;
+}
+
+/* connect section */
+.social a:hover {
+  color: var(--color-ivory);
+}
+
+.social a{
+  color: var(--color-charcoal);
+  font-size: 4.5em;
+  padding:3rem;
+}
+
+/* footer styling */
+footer {
+  background-color: var(--color-charcoal);
+  color: whitesmoke;
+  padding-top: 2rem;
+}
+
+hr.light {
+  border-top: 1px solid var(--color-lint);
+  width: 75%;
+  margin: .8rem auto 1rem auto;
+}
+
+hr.light-100 {
+  border-top: 1px solid var(--color-lint);
+  width: 100%;
+  margin: .8rem auto 1rem auto;
+}
+
+.github {
+  color:whitesmoke;
+}
+
+.github:hover{
+  color:var(--color-lint);
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a{
+    font-size: 4em;
+    padding: 2rem;
+  }
+  }
+
+@media (max-width: 768px) {
+  .carousel-caption{
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    font-size:350%;
+  }
+  
+  .carousel-caption h3 {
+    font-size:140%;
+    font-weight: 400;
+    padding-bottom: .2rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a{
+    font-size: 2.5em;
+    padding: 1.2em;
+  }
+  
+}
+@media (max-width: 576px) {
+  .carousel-caption{
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+    font-size:250%;
+  }
+  
+  .carousel-caption h3 {
+    font-size:110%;
+  }
+
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a{
+    font-size: 2em;
+    padding: .7em;
+  }
+
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('../assets/fixed.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}

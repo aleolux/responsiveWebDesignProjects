@@ -1,0 +1,116 @@
+    html {
+        font-size: 10px;
+    }
+
+    body {
+        font-family: BlinkMacSystemFont,"Roboto Slab","monospace";
+        text-align: center;
+        line-height: 1.5;
+        color: rgb(33, 56, 56);
+        margin: 0;
+        font-size:1.6rem;
+    }
+
+    #main {
+        background: linear-gradient(45deg, rgb(177, 177, 177), #e7e6e6);
+        border-radius: 2%;
+        margin: 20px 10px;
+        padding: 15px; 
+    }
+    
+    figcaption {
+        color:gray;
+        font-size: 1.3rem;
+        margin-bottom:1%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 0.3;
+        }
+
+    @media(max-width:460px){
+        h1 {
+            font-size: 1.8rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+        }
+        body {
+            font-size:1.2rem;
+        }
+        #img-div {
+            padding: 0px;
+            margin-left:0px;
+            margin-right:0px;
+        }
+        #img-caption {
+            font-size: 0.7rem;
+        }
+        #image {
+            max-width:100%;
+        }
+        #main {
+            margin:0px;
+            border-radius:0%;
+            padding:5px;
+        }
+        #quote {
+            margin:auto;
+            font-size: 1.2rem;
+        }
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    #img-div {
+        background: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px 30px;
+    }
+
+    img {
+        max-width: 75%;
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 1%;
+    }
+
+    ul {
+        max-width: 900px;
+        margin: 10px auto 30px auto; 
+        text-align: left;
+        line-height: 1.5;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    li {
+        margin: 16px 0; 
+    }
+
+    #quote {
+        font-size: 1.8rem;
+        font-style: italic;
+        line-height: 2rem;
+        max-width: 500px;
+        margin: 4rem auto;
+    }
+
+    #footer{
+        margin: 6rem auto auto 2rem;
+        max-height: 1.5rem;
+    }
+
+    a {
+        font-size: 1.3rem;
+    }
+
+    a:hover{
+        font-size: 1.5rem;
+        color:royalblue;
+    }
